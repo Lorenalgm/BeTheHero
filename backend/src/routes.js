@@ -7,7 +7,7 @@ const SessionController = require('./controllers/SessionController');
 
 const routes = express.Router();
 
-routes.post('/sessions', SessionController.store);
+routes.post('/sessions', SessionController.create);
 
 routes.get('/profile', ProfileController.index);
 
